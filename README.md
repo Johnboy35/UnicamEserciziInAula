@@ -1,2 +1,2 @@
 # UnicamEserciziInAula
-Esercizi fatti in aula
+Ogni cartella rappresenta un esercizio svolto in aula.
