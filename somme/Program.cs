@@ -6,27 +6,25 @@ namespace somme
     {
         static void Main(string[] args)
         {
+            //Inizializziamo la variabile che conterrà il risultato
             int risultato = 0;
-            while (true)
+            while (true) //Avendo scritto while(true) il ciclo while girerà all'infinito, dato che l'espressione true è costante e non potrà mai diventare false. L'unico modo di uscire dal ciclo sarà usando l'istruzione break (vedi riga 18)
             {
-                Console.WriteLine("Perfavore decidi cosa fare (scrivi stop per stoppare)");
-                string decisione = Console.ReadLine();
+                Console.WriteLine("Per favore, inserisci un numero e premi INVIO oppure scrivi stop e premi INVIO per uscire dal programma");
+                string decisione = Console.ReadLine(); //Raccogliamo l'input dell'utente
                 if (decisione == "stop")
                 {
                     Console.WriteLine(risultato);
-                    break;
+                    break; //esce dal ciclo while, l'esecuzione riprenderà dalla riga 27
                 }
                 else
                 {
-                    Console.WriteLine("Per favore scrivi un numero");
-                    string primoNumero = Console.ReadLine();
-                    int variabileParse = int.Parse(primoNumero);
-                    risultato += variabileParse;
+                    int variabileParse = int.Parse(decisione); //converto l'input dell'utente da stringa a numero intero
+                    risultato += variabileParse; //incremento il risultato con il numero intero digitato dall'utente
                     Console.WriteLine(risultato);
                 }
             }
-
-
+            //Qui sono fuori dal ciclo while
         }
     }
 }
