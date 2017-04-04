@@ -7,7 +7,7 @@
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}\\UnicamMath.csproj"
+                "${workspaceRoot}/UnicamMath.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
