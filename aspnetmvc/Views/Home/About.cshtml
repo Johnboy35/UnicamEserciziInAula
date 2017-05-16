@@ -4,4 +4,9 @@
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
+<ul>
+@foreach(var item in Model) {
+    <li>@item.Nome</li>
+}
+</ul>
 <p>Use this area to provide additional information.</p>
